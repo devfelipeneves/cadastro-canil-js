@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Raças</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <p id="modal-header"></p>
+      <p id="modal-message"></p>
+    </div>
+  </div>
+
+  <h1>Cadastro de Raças</h1>
+  <form id="racasForm">
+    <label for="racaNome">Nome da Raça:</label>
+    <input type="text" id="racaNome" required>
+    <button type="button" class="button button-sucess" onclick="cadastrarRaca()">Cadastrar</button>
+  </form>
+
+  <h2 id="racasHeader">Raças Cadastradas</h2>
+  <ul id="racasList"></ul>
+
+  <a href="../index.html" class="button">Voltar para a Página Inicial</a>
+
+  <button onclick="resetarDados('racas')" class="button reset-button">Resetar Dados de Raças</button>
+
+  <footer class="custom-footer">
+    <p>Felipe Neves da Silva Santos</p>
+  </footer>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>

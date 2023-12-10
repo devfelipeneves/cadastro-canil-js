@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Cães</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <p id="modal-header"></p>
+      <p id="modal-message"></p>
+    </div>
+  </div>
+
+  <h1>Cadastro de Cães</h1>
+  <form id="caesForm">
+    <label for="caesNome">Nome do Cão:</label>
+    <input type="text" id="caesNome" required>
+
+    <label for="selectRacas">Selecione a Raça:</label>
+    <select id="selectRacas" required></select>
+
+    <button type="button" class="button button-sucess" onclick="cadastrarCao()">Cadastrar</button>
+  </form>
+
+  <h2 id="caesHeader">Cães Cadastrados</h2>
+  <table id="caesTable">
+    <thead>
+      <tr>
+        <th>Nome do Cão</th>
+        <th>Raça</th>
+      </tr>
+    </thead>
+    <tbody id="caesList"></tbody>
+  </table>
+
+  <a href="../index.html" class="button">Voltar para a Página Inicial</a>
+
+  <button onclick="resetarDados('caes')" class="button reset-button">Resetar Dados de Cães</button>
+
+  <footer class="custom-footer">
+    <p>Felipe Neves da Silva Santos</p>
+  </footer>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>
